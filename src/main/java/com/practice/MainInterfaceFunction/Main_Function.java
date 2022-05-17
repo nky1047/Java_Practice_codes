@@ -1,43 +1,20 @@
-package com.practice.BasicJava;
+package com.practice.MainInterfaceFunction;
 
+import com.nitin.allFunctions.*;
 import java.util.Scanner;
 
-public class Factorial_of_a_number {
+public class Main_Function {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		myFactorial();
-	
-		String usr ="Y"; 
-		while(usr!="N" || usr!="n") { 
-			Scanner scanner = new Scanner(System.in); 
-			usr=scanner.next();
-			myFactorial();
-		 //hi there
-			
-		}
-	}
-
-	static int fact(int number) {
-		int factorial = 1;
-		while (number > 0) {
-			factorial = factorial * number;
-			number--;
-			System.out.print(factorial + "x" + number + "=");
-		
-		
-		}
-		return factorial;
-	}
-
-	static void myFactorial() {
-		int number = 5;
-		System.out.print("Enter a number: ");
+		String usr = "Y";
 		Scanner scanner = new Scanner(System.in);
-		number = scanner.nextInt();
-		int factorial = fact(number);
-		System.out.println(" \nFactorial of " + number + " is :" + factorial);
+		while (usr == "Y" || usr=="y" || usr!="0") {
+			myFactorial.calcFact();
+			System.out.println("Run your fuction ? (Y/n)");
+			usr = scanner.next();
+		}
+		
+		scanner.close();
+		System.out.println("End of Program!");
 	}
-
 }
