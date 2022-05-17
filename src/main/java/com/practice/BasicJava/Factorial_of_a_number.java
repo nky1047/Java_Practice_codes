@@ -14,7 +14,8 @@ public class Factorial_of_a_number {
 			Scanner scanner = new Scanner(System.in); 
 			usr=scanner.next();
 			myFactorial();
-		 
+		 //hi there
+			
 		}
 	}
 
@@ -24,6 +25,8 @@ public class Factorial_of_a_number {
 			factorial = factorial * number;
 			number--;
 			System.out.print(factorial + "x" + number + "=");
+		
+		
 		}
 		return factorial;
 	}
