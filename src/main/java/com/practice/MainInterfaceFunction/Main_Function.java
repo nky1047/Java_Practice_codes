@@ -6,14 +6,27 @@ import java.util.Scanner;
 public class Main_Function {
 
 	public static void main(String[] args) {
-		String usr = "Y";
-		Scanner scanner = new Scanner(System.in);
-		while (usr == "Y" || usr=="y" || usr!="0") {
-			myFactorial.calcFact();
-			System.out.println("Run your fuction ? (Y/n)");
-			usr = scanner.next();
-		}
+		Scanner scanner = new Scanner(System.in); 
+		//Factorial
+		myFactorial.calcFact();
+		
+		//SumofDigits
+		sum_of_Digits_of_an_Integer.calcSumofDigits();
+		
+		//Reverse a Number
+		reverseTheNumber.rev();
+
+		/*
+		 * System.out.println("Run your fuction ? (Y/n)");
+		 * String usr = "Y";
+		 * 
+		 * while (usr == "Y" || usr=="y" ||
+		 * usr!="0") { 
+		 * usr = scanner.next(); 
+		 * } 
+		 *
+		 */
 		scanner.close();
-		System.out.println("End of Program!");
+		System.out.println("\nEND  OF  PROGRAM!");
 	}
 }
