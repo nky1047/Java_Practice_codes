@@ -13,7 +13,6 @@ public class Main_Function {
 			System.out.println("Run your fuction ? (Y/n)");
 			usr = scanner.next();
 		}
-		
 		scanner.close();
 		System.out.println("End of Program!");
 	}

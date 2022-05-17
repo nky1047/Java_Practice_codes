@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class myFactorial {
 
 	public static void calcFact() {
-		int number = 5;
+		int number;
 		System.out.print("Enter a number: ");
 		Scanner scanner = new Scanner(System.in);
 		number = scanner.nextInt();
