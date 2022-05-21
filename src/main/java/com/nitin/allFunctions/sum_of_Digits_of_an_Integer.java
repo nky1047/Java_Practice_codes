@@ -19,6 +19,7 @@ public class sum_of_Digits_of_an_Integer {
 		}
 		System.out.println("\n\nSum of Digits of "+number+" = " +sum);
 		temp=0;
+		return;
 		
 	}	
 }
